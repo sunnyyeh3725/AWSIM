@@ -87,6 +87,12 @@ if (~startTime_found)
   end
 end
 
+%%% Overwrite
+if starttimeoverwrite
+    restart = 0;
+    startTime = 0;
+end
+
 %%% Calculate missing time parameter
 if (~Nt_found)
   Nt = ceil((endTime-startTime)/dt);

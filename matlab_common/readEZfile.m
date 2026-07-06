@@ -3,6 +3,7 @@
 %%% the energy and potential enstrophy.
 %%%
 function [KE,PE,E,Z,t] = readEZfile (local_home_dir,run_name)
+  starttimeoverwrite = true;
 
   %%% Load parameters
   loadParams;
