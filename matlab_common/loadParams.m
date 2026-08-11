@@ -87,10 +87,11 @@ if (~startTime_found)
   end
 end
 
-%%% Overwrite
+%%% Overwrite (this is for the simulation that has the continuation-purpose restart)
 if starttimeoverwrite
     restart = 0;
     startTime = 0;
+    n0=0;
 end
 
 %%% Calculate missing time parameter
